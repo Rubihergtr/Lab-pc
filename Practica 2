@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if[[ $(($1 % 2)) ==0]] 
+then 
+echo Par
+else 
+echo Impar 
+fi
+
+
+
+#script powershell 
+
+$servicios = Get-Service 
+foreach($elemento in $servicios){
+Write-Host $elemento.Name "-->" $elemento.Status
+}
